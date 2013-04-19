@@ -1,0 +1,6 @@
+﻿{
+    "name"    : "Portfolio",    
+    "html"    : "Portfolio.html",
+    "styles"  : ["Portfolio.css"],
+    "scripts" : ["Portfolio.js"]
+}
