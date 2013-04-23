@@ -3,20 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}richText1 {
-	 width: 698px;
-	 height: 52px;
-	 top: 150px;
-	 left: 10px;
+#{id}image2 {
+	 width: 828px;
+	 height: 520px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
-	 text-align: center;
-	 color: rgb(255, 0, 0);
 	 border-top-width: 0px;
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
-	 font-size: 48px;
 	 
 }
 

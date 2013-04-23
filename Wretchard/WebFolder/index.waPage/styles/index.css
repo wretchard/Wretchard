@@ -17,7 +17,7 @@
 	 width: 56px;
 	 height: 47px;
 	 top: 10px;
-	 left: 24px;
+	 left: 16px;
 	
 	 position: absolute;
 	 border-top-width: 0px;
@@ -78,7 +78,7 @@
 }
 
 #menuBarWretchard {
-	 width: 460px;
+	 width: 450px;
 	 height: 26px;
 	 top: 10px;
 	 left: 275px;
@@ -88,21 +88,21 @@
 }
 
 #txtLabelHead {
-	 width: 192px;
+	 width: 200px;
 	 height: 26px;
-	 top: 11px;
-	 left: 90px;
+	 top: 10px;
+	 left: 75px;
 	
 	 position: absolute;
 	 text-align: center;
 	 font-family: 'Droid Sans', sans-serif;
-	 font-size: 24px;
 	 line-height: 26px;
 	 color: rgb(114, 114, 114);
 	 border-top-width: 0px;
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
+	 font-size: 28px;
 	 
 }
 
@@ -117,24 +117,24 @@
 }
 
 #component_main {
-	 width: 716px;
-	 height: 644px;
+	 width: 828px;
+	 height: 630px;
 	 top: 67px;
 	 left: 14px;
 	
 	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 2px;
-	 border-left-style: solid;
-	 border-left-width: 2px;
-	 border-right-style: solid;
-	 border-right-width: 2px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 2px;
 	 border-top-color: rgb(153, 153, 153);
 	 border-left-color: rgb(153, 153, 153);
 	 border-right-color: rgb(153, 153, 153);
 	 border-bottom-color: rgb(153, 153, 153);
+	 border-top-style: none;
+	 border-left-style: none;
+	 border-right-style: none;
+	 border-bottom-style: none;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
 	 
 }
 

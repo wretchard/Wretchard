@@ -1,7 +1,7 @@
 ﻿function dispatchHandler ( request, response ) {
 	var responseTxt
 	if (settings.project.hostName=='localhost') {
-		 responseTxt='http://local.tracker.com:8081/index/'
+		 responseTxt='http://localhost:8081/index/'
 	     //response.headers.location ='http://local.tracker.com:8081/index/'
 	}
 	else {
