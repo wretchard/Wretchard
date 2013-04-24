@@ -3,8 +3,53 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#menuBarWretchard > .waf-menuItem {
+	 margin-bottom: 0px;
+	 
+}
+
+#menuBarWretchard > .waf-menuItem:not(.waf-menuItem-last) {
+	 margin-right: 0px;
+	 
+}
+
+#richText4 {
+	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem1 {
+	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
+#menuBar1 {
+	 width: 109px;
+	 height: 24px;
+	 top: 26px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
 #richText6 {
-	 width: 110px;
+	 width: 109px;
 	 height: 24px;
 	 top: 0px;
 	 left: 0px;
@@ -44,21 +89,12 @@
 	 left: 0px;
 	
 	 position: absolute;
+	 font-size: 14px;
 	 
 }
 
 #richText2 {
 	 width: 109px;
-	 height: 24px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem2 {
-	 width: 110px;
 	 height: 24px;
 	 top: 0px;
 	 left: 0px;
@@ -113,6 +149,7 @@
 	 left: 0px;
 	
 	 position: absolute;
+	 font-size: 14px;
 	 
 }
 
@@ -145,6 +182,18 @@
 	 left: 0px;
 	
 	 position: absolute;
+	 font-size: 14px;
+	 
+}
+
+#menuItemIdeas {
+	 width: 110px;
+	 height: 24px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 14px;
 	 
 }
 
