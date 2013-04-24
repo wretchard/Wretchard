@@ -13,6 +13,7 @@
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
+	 text-align: center;
 	 
 }
 
@@ -25,20 +26,20 @@
 }
 
 #{id}matrix2 {
-	 width: 780px;
-	 height: 284px;
+	 width: 754px;
+	 height: 286px;
 	 top: 10px;
 	 left: 10px;
 	
 	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
+	 border-top-style: none;
+	 border-top-width: 0px;
+	 border-left-style: none;
+	 border-left-width: 0px;
+	 border-right-style: none;
+	 border-right-width: 0px;
+	 border-bottom-style: none;
+	 border-bottom-width: 0px;
 	 
 }
 
@@ -53,6 +54,7 @@
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
+	 text-align: center;
 	 
 }
 
