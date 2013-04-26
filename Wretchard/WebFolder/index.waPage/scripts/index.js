@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuItemRecruitment = {};	// @menuItem
 	var menuItem1 = {};	// @menuItem
 	var menuItem3 = {};	// @menuItem
 	var menuItemTipjar = {};	// @menuItem
@@ -9,6 +10,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuItemRecruitment.click = function menuItemRecruitment_click (event)// @startlock
+	{// @endlock
+		$$('component_main').removeComponent();
+		$$('component_main').loadComponent('/Components/UnderConstruction.waComponent');
+	};// @lock
 
 	menuItem1.click = function menuItem1_click (event)// @startlock
 	{// @endlock
@@ -24,7 +31,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	menuItemTipjar.click = function menuItemTipjar_click (event)// @startlock
 	{// @endlock
-		window.location.href='/tipjar.html';
+		$$('component_main').removeComponent();
+		$$('component_main').loadComponent('/Components/Tipjar.waComponent');		
+		//window.location.href='/tipjar.html';
 	};// @lock
 
 	menuItemPortfolio.click = function menuItemPortfolio_click (event)// @startlock
@@ -34,6 +43,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("menuItemRecruitment", "click", menuItemRecruitment.click, "WAF");
 	WAF.addListener("menuItem1", "click", menuItem1.click, "WAF");
 	WAF.addListener("menuItem3", "click", menuItem3.click, "WAF");
 	WAF.addListener("menuItemTipjar", "click", menuItemTipjar.click, "WAF");

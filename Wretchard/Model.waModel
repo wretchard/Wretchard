@@ -36,8 +36,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 275,
-						"Y": 210
+						"X": 394,
+						"Y": 25
 					}
 				}
 			},
@@ -47,8 +47,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 265,
-						"Y": 20
+						"X": 39,
+						"Y": 280
 					}
 				}
 			}
@@ -91,6 +91,26 @@
 					"kind": "storage",
 					"scope": "public",
 					"type": "string"
+				},
+				{
+					"name": "ideasInvoiceCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "IdeasInvoiceCollection",
+					"reversePath": true,
+					"path": "product"
+				},
+				{
+					"name": "unitPrice",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number",
+					"defaultFormat": [
+						{
+							"presentation": "text",
+							"format": null
+						}
+					]
 				}
 			]
 		},
@@ -114,6 +134,26 @@
 					"kind": "storage",
 					"scope": "public",
 					"type": "string"
+				},
+				{
+					"name": "ideasInvoiceCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "IdeasInvoiceCollection",
+					"reversePath": true,
+					"path": "ideasCustomers"
+				},
+				{
+					"name": "firstName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "lastName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
 				}
 			]
 		},
@@ -131,6 +171,32 @@
 					"autogenerate": true,
 					"type": "uuid",
 					"primKey": true
+				},
+				{
+					"name": "ideasCustomers",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "IdeasCustomers",
+					"path": "IdeasCustomers"
+				},
+				{
+					"name": "product",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "IdeasCatering",
+					"path": "IdeasCatering"
+				},
+				{
+					"name": "quantity",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "purchasePrice",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
 				}
 			]
 		}

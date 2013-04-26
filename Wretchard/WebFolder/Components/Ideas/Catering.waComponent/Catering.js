@@ -25,14 +25,24 @@ function constructor (id) {
 
 	containerMenu.click = function containerMenu_click (event)// @startlock
 	{// @endlock
-		alert('detail form');
+
+		var foodURL= sources.component_main_arrayFood.url;
+		var foodBlurb=sources.component_main_arrayFood.blurb;
+		var foodID=sources.component_main_arrayFood.food_id;
+		
+		//$$('component_main_componentOrder').removeComponent();
+		$$('component_main_componentOrder').loadComponent({path:'/Components/Ideas/CateringInvoice.waComponent',
+		userData:{url:foodURL, blurb:foodBlurb, food_id:foodID}})
+		$$('component_main_componentList').loadComponent('/Components/Ideas/CateringOrderList.waComponent');
+
 	};// @lock
 	
 	function buildArray() {
 	component_main_arrayFood=[];
 	for (var i=0; i< sources.component_main_ideasCatering.length; i++) {
 	   if(sources.component_main_ideasCatering.getPosition()<=i) {
-	 	  component_main_arrayFood.push({url:sources.component_main_ideasCatering.url, blurb:sources.component_main_ideasCatering.blurb})  	
+	 	  component_main_arrayFood.push({url:sources.component_main_ideasCatering.url, blurb:sources.component_main_ideasCatering.blurb,
+	 	  food_id:sources.component_main_ideasCatering.ID})  	
 	   	}
 	   	sources.component_main_ideasCatering.selectNext();
 	}

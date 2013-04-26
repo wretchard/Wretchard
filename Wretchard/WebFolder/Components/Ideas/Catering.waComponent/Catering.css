@@ -8,41 +8,6 @@
 	 
 }
 
-#{id}matrix2 .waf-widget.waf-clone-{id}richText2 {
-	 border-top-width: 0px;
-	 border-left-width: 0px;
-	 border-right-width: 0px;
-	 border-bottom-width: 0px;
-	 text-align: center;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}image2 {
-	 border-top-width: 0px;
-	 border-left-width: 0px;
-	 border-right-width: 0px;
-	 border-bottom-width: 0px;
-	 
-}
-
-#{id}matrix2 {
-	 width: 754px;
-	 height: 286px;
-	 top: 10px;
-	 left: 10px;
-	
-	 position: absolute;
-	 border-top-style: none;
-	 border-top-width: 0px;
-	 border-left-style: none;
-	 border-left-width: 0px;
-	 border-right-style: none;
-	 border-right-width: 0px;
-	 border-bottom-style: none;
-	 border-bottom-width: 0px;
-	 
-}
-
 #{id}richText2 {
 	 width: 110px;
 	 height: 16px;
@@ -79,6 +44,81 @@
 	 left: 10px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}matrixDisplay .waf-widget.waf-clone-{id}richText2 {
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 text-align: center;
+	 
+}
+
+#{id}matrixDisplay .waf-widget.waf-clone-{id}image2 {
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
+#{id}matrixDisplay {
+	 width: 754px;
+	 height: 286px;
+	 top: 10px;
+	 left: 10px;
+	
+	 position: absolute;
+	 border-top-style: none;
+	 border-top-width: 0px;
+	 border-left-style: none;
+	 border-left-width: 0px;
+	 border-right-style: none;
+	 border-right-width: 0px;
+	 border-bottom-style: none;
+	 border-bottom-width: 0px;
+	 
+}
+
+#{id}componentOrder {
+	 width: 340px;
+	 height: 300px;
+	 top: 307px;
+	 left: 10px;
+	
+	 position: absolute;
+	 border-top-color: rgb(0, 0, 0);
+	 border-left-color: rgb(0, 0, 0);
+	 border-right-color: rgb(0, 0, 0);
+	 border-bottom-color: rgb(0, 0, 0);
+	 border-top-style: none;
+	 border-left-style: none;
+	 border-right-style: none;
+	 border-bottom-style: none;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
+#{id}componentList {
+	 width: 405px;
+	 height: 300px;
+	 top: 307px;
+	 left: 360px;
+	
+	 position: absolute;
+	 border-top-style: none;
+	 border-top-width: 0px;
+	 border-left-style: none;
+	 border-left-width: 0px;
+	 border-right-style: none;
+	 border-right-width: 0px;
+	 border-bottom-style: none;
+	 border-bottom-width: 0px;
 	 
 }
 

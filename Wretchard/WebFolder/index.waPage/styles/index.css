@@ -3,6 +3,46 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText8 {
+	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuBar2 {
+	 width: 109px;
+	 height: 24px;
+	 top: 24px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#richText7 {
+	 width: 109px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#richText5 {
+	 width: 110px;
+	 height: 24px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #menuBarWretchard > .waf-menuItem {
 	 margin-bottom: 0px;
 	 
@@ -36,8 +76,8 @@
 
 #menuBar1 {
 	 width: 109px;
-	 height: 24px;
-	 top: 26px;
+	 height: 44px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -114,7 +154,7 @@
 }
 
 #menuBarWretchard {
-	 width: 450px;
+	 width: 552px;
 	 height: 26px;
 	 top: 10px;
 	 left: 275px;
@@ -194,6 +234,38 @@
 	
 	 position: absolute;
 	 font-size: 14px;
+	 
+}
+
+#menuItemRecruitment {
+	 width: 109px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
+#menuItemLogin {
+	 width: 110px;
+	 height: 24px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 14px;
+	 
+}
+
+#menuItemFB {
+	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
 	 
 }
 
