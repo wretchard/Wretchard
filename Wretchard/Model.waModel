@@ -36,8 +36,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 394,
-						"Y": 25
+						"X": 399,
+						"Y": 21
 					}
 				}
 			},
@@ -104,13 +104,7 @@
 					"name": "unitPrice",
 					"kind": "storage",
 					"scope": "public",
-					"type": "number",
-					"defaultFormat": [
-						{
-							"presentation": "text",
-							"format": null
-						}
-					]
+					"type": "number"
 				}
 			]
 		},
