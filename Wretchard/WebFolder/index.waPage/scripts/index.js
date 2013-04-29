@@ -2,9 +2,10 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuItemFB = {};	// @menuItem
+	var menuItemTwitter = {};	// @menuItem
 	var menuItemNoWay = {};	// @menuItem
 	var menuItemBelmont = {};	// @menuItem
-	var menuItemRecruitment = {};	// @menuItem
 	var menuItem1 = {};	// @menuItem
 	var menuItem3 = {};	// @menuItem
 	var menuItemTipjar = {};	// @menuItem
@@ -12,21 +13,25 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
+	menuItemFB.click = function menuItemFB_click (event)// @startlock
+	{// @endlock
+		$$('component_main').removeComponent();
+		$$('component_main').loadComponent('/Components/UnderConstruction.waComponent');
+	};// @lock
+
+	menuItemTwitter.click = function menuItemTwitter_click (event)// @startlock
+	{// @endlock
+		window.open('https://twitter.com/wretchardthecat', '_blank');
+	};// @lock
+
 	menuItemNoWay.click = function menuItemNoWay_click (event)// @startlock
 	{// @endlock
-		window.open("http://www.amazon.com/exec/obidos/ASIN/1453892818/wwwfallbackbe-20", "_blank")
+		window.open("http://www.amazon.com/exec/obidos/ASIN/1453892818/wwwfallbackbe-20", "_blank");
 	};// @lock
 
 	menuItemBelmont.click = function menuItemBelmont_click (event)// @startlock
 	{// @endlock
-		$$('component_main').removeComponent();
-		$$('component_main').loadComponent('/Components/Portfolio/Belmont.waComponent');
-	};// @lock
-
-	menuItemRecruitment.click = function menuItemRecruitment_click (event)// @startlock
-	{// @endlock
-		$$('component_main').removeComponent();
-		$$('component_main').loadComponent('/Components/UnderConstruction.waComponent');
+		window.open("http://pjmedia.com/richardfernandez/", "_blank");
 	};// @lock
 
 	menuItem1.click = function menuItem1_click (event)// @startlock
@@ -49,9 +54,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("menuItemFB", "click", menuItemFB.click, "WAF");
+	WAF.addListener("menuItemTwitter", "click", menuItemTwitter.click, "WAF");
 	WAF.addListener("menuItemNoWay", "click", menuItemNoWay.click, "WAF");
 	WAF.addListener("menuItemBelmont", "click", menuItemBelmont.click, "WAF");
-	WAF.addListener("menuItemRecruitment", "click", menuItemRecruitment.click, "WAF");
 	WAF.addListener("menuItem1", "click", menuItem1.click, "WAF");
 	WAF.addListener("menuItem3", "click", menuItem3.click, "WAF");
 	WAF.addListener("menuItemTipjar", "click", menuItemTipjar.click, "WAF");

@@ -3,29 +3,13 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}richTextBlurb {
+#{id}frame1 {
 	 width: 800px;
-	 height: 164px;
-	 top: 50px;
-	 left: 10px;
+	 height: 600px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
-	 background-color: transparent;
-	 text-align: center;
-	 font-size: 24px;
-	 border-top-color: transparent;
-	 border-top-style: none;
-	 border-top-width: 0px;
-	 border-left-color: transparent;
-	 border-left-style: none;
-	 border-left-width: 0px;
-	 border-right-color: transparent;
-	 border-right-style: none;
-	 border-right-width: 0px;
-	 border-bottom-color: transparent;
-	 border-bottom-style: none;
-	 border-bottom-width: 0px;
-	 color: rgb(102, 102, 102);
 	 
 }
 

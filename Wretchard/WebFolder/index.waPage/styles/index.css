@@ -3,6 +3,16 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText9 {
+	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #richText14 {
 	 width: 101px;
 	 height: 22px;
@@ -17,7 +27,7 @@
 	 width: 105px;
 	 height: 24px;
 	 top: 0px;
-	 left: 105px;
+	 left: 107px;
 	
 	 position: absolute;
 	 
@@ -25,7 +35,7 @@
 
 #richText13 {
 	 width: 105px;
-	 height: 22px;
+	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -35,7 +45,7 @@
 
 #richText11 {
 	 width: 105px;
-	 height: 22px;
+	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -45,8 +55,8 @@
 
 #menuBar3 {
 	 width: 109px;
-	 height: 44px;
-	 top: 40px;
+	 height: 68px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -71,16 +81,6 @@
 #menuBar2 {
 	 width: 109px;
 	 height: 24px;
-	 top: 40px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText7 {
-	 width: 109px;
-	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -131,8 +131,8 @@
 
 #menuBar1 {
 	 width: 109px;
-	 height: 44px;
-	 top: 40px;
+	 height: 22px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -210,7 +210,7 @@
 
 #menuBarWretchard {
 	 z-index: 2;
-	 width: 662px;
+	 width: 600px;
 	 height: 40px;
 	 top: 10px;
 	 left: 275px;
@@ -230,11 +230,11 @@
 	 font-family: 'Droid Sans', sans-serif;
 	 line-height: 26px;
 	 color: rgb(114, 114, 114);
+	 font-size: 28px;
 	 border-top-width: 0px;
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
-	 font-size: 28px;
 	 
 }
 
@@ -293,17 +293,6 @@
 	 
 }
 
-#menuItemRecruitment {
-	 width: 109px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 font-size: 11px;
-	 
-}
-
 #menuItemLogin {
 	 width: 110px;
 	 height: 38px;
@@ -322,6 +311,7 @@
 	 left: 0px;
 	
 	 position: absolute;
+	 font-size: 11px;
 	 
 }
 
@@ -349,6 +339,17 @@
 
 #menuItemNoWay {
 	 width: 101px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
+#menuItemTwitter {
+	 width: 105px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;

@@ -3,6 +3,22 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}richText1 {
+	 width: 800px;
+	 height: 32px;
+	 top: 10px;
+	 left: 10px;
+	
+	 position: absolute;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 font-size: 12px;
+	 color: rgb(114, 114, 114);
+	 
+}
+
 .waf-widget.waf-clone-{id}containerMenu {
 	 position: absolute;
 	 
@@ -67,25 +83,25 @@
 #{id}matrixDisplay {
 	 width: 754px;
 	 height: 286px;
-	 top: 10px;
+	 top: 50px;
 	 left: 10px;
 	
 	 position: absolute;
 	 border-top-style: none;
-	 border-top-width: 0px;
 	 border-left-style: none;
-	 border-left-width: 0px;
 	 border-right-style: none;
-	 border-right-width: 0px;
 	 border-bottom-style: none;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
 	 border-bottom-width: 0px;
 	 
 }
 
 #{id}componentOrder {
 	 width: 340px;
-	 height: 300px;
-	 top: 307px;
+	 height: 350px;
+	 top: 347px;
 	 left: 10px;
 	
 	 position: absolute;
@@ -106,18 +122,18 @@
 
 #{id}componentList {
 	 width: 405px;
-	 height: 300px;
-	 top: 307px;
+	 height: 350px;
+	 top: 347px;
 	 left: 360px;
 	
 	 position: absolute;
 	 border-top-style: none;
-	 border-top-width: 0px;
 	 border-left-style: none;
-	 border-left-width: 0px;
 	 border-right-style: none;
-	 border-right-width: 0px;
 	 border-bottom-style: none;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
 	 border-bottom-width: 0px;
 	 
 }

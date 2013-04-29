@@ -191,6 +191,32 @@
 					"kind": "storage",
 					"scope": "public",
 					"type": "number"
+				},
+				{
+					"name": "subTotal",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "number",
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "guidedModel.IdeasInvoice.subTotal.onGet"
+						}
+					]
+				}
+			],
+			"methods": [
+				{
+					"name": "addProduct",
+					"applyTo": "dataClass",
+					"from": "guidedModel.IdeasInvoice.methods.addProduct",
+					"scope": "public"
+				},
+				{
+					"name": "addCustomer",
+					"applyTo": "dataClass",
+					"from": "guidedModel.IdeasInvoice.methods.addCustomer",
+					"scope": "public"
 				}
 			]
 		}
