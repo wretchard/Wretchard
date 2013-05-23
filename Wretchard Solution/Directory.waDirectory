@@ -3,17 +3,21 @@
 <group ID="01000000000000000000000000000000" name="Admin">
 
 	<include user="wretchard" ID="6F201AC4710F724C9C85D2500D62238C"/>
-
-	<include group="Debugger" groupID="CBB47EE05421BF4D8161B0C2C9EDC631"/>
-
-	<include group="DemoUser" groupID="BCFD15008AFFB04790BEA80B266A6B47"/>
 </group>
 
-<group ID="CBB47EE05421BF4D8161B0C2C9EDC631" name="Debugger"/>
+<group ID="CBB47EE05421BF4D8161B0C2C9EDC631" name="Debugger">
 
-<group ID="BCFD15008AFFB04790BEA80B266A6B47" name="DemoUser"/>
+	<include user="wretchard" ID="6F201AC4710F724C9C85D2500D62238C"/>
+</group>
+
+<group ID="BCFD15008AFFB04790BEA80B266A6B47" name="DemoUser">
+
+	<include group="Admin" groupID="01000000000000000000000000000000"/>
+
+	<include user="wretchard" ID="6F201AC4710F724C9C85D2500D62238C"/>
+</group>
 
 <user ID="6F201AC4710F724C9C85D2500D62238C" name="wretchard" fullName="Richard R. Fernandez" password="28e2b19ace20ce18628b2e6db99e8b30"/>
 
-<user ID="4BD760657C67F74CA6A56212497ED916" name="tomr" fullName="Tom Rutherford" password="65c00dd3b2ab6d00e5c78eed59e10e68"/>
+<user ID="4BD760657C67F74CA6A56212497ED916" name="tomr" fullName="Tom Rutherford" password="53c8f10b95e6c593f673647c2600544a"/>
 </directory>

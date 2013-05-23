@@ -25,8 +25,8 @@
 					"pathVisible": true,
 					"isOpen": "true",
 					"position": {
-						"X": 25,
-						"Y": 20
+						"X": 54,
+						"Y": 22
 					}
 				}
 			},
@@ -36,8 +36,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 399,
-						"Y": 21
+						"X": 439,
+						"Y": 22
 					}
 				}
 			},
@@ -207,19 +207,18 @@
 			],
 			"methods": [
 				{
-					"name": "addProduct",
-					"applyTo": "dataClass",
-					"from": "guidedModel.IdeasInvoice.methods.addProduct",
-					"scope": "public"
-				},
-				{
 					"name": "addCustomer",
 					"applyTo": "dataClass",
-					"from": "guidedModel.IdeasInvoice.methods.addCustomer",
-					"scope": "public"
+					"scope": "public",
+					"from": "guidedModel.IdeasInvoice.methods.addCustomer"
+				},
+				{
+					"name": "addProduct",
+					"applyTo": "dataClass",
+					"scope": "public",
+					"from": "guidedModel.IdeasInvoice.methods.addProduct"
 				}
 			]
 		}
-	],
-	"type": []
+	]
 }

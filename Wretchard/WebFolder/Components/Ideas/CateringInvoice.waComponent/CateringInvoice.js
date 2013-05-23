@@ -24,13 +24,17 @@ function constructor (id) {
 					$('#component_main_componentOrder_richTextblurb').text(event.dataSource.blurb);
 					$('#component_main_componentOrder_richTextPrice').text('A$' + event.dataSource.unitPrice);
 					vUnitPrice=event.dataSource.unitPrice;
-					vFood=event;
+					vFood=event.dataSource.ID;
 					buildPicture();
 					}
 		})
 		
 		function buildPicture() {
 			sources.component_main_componentOrder_imageURL.sync();		
+		}
+		
+		function buildProduct() {
+			alert('sheesh')
 		}
 		
 		
@@ -43,14 +47,20 @@ function constructor (id) {
 
 	radioGroup1.change = function radioGroup1_change (event)// @startlock
 	{// @endlock
-		//debugger;
 		var vQty = $('#component_main_componentOrder_textFieldQty').val()
+		var vObj={};
 		sources.component_main_componentList_ideasInvoice.addNewElement();
 		sources.component_main_componentList_ideasInvoice.getCurrentElement()
 		sources.component_main_componentList_ideasInvoice.quantity = vQty;
 		sources.component_main_componentList_ideasInvoice.purchasePrice = vUnitPrice;
-		//sources.component_main_componentList_ideasInvoice.product=sources.component_main_componentOrder_ideasCatering.getCurrentElement();
-		sources.component_main_componentList_ideasInvoice.save()
+		sources.component_main_componentList_ideasInvoice.save({onSuccess: function(event) {
+		sources.component_main_componentList_ideasInvoice.getCurrentElement()
+		vObj.invoice=sources.component_main_componentList_ideasInvoice.ID;
+		vObj.product=vFood;
+		sources.component_main_componentList_ideasInvoice.addProduct(vObj);}
+		}
+		);
+		
 		
 	};// @lock
 

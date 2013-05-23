@@ -9,15 +9,18 @@ guidedModel =// @startlock
 			{// @lock
 				// Add your code here
 			},// @lock
-			addProduct:function(productID)
+			addProduct:function(productObj)
 			{// @lock
 				try {
-				TheProduct=ds.IdeasCatering(productID)
-				if(TheProduct) {
-					this.product=TheProduct;
+				TheInvoice=ds.IdeasInvoice(productObj.invoice);
+				TheProduct=ds.IdeasCatering(productObj.product);
+				if(TheInvoice && TheProduct) {
+					TheInvoice.product=TheProduct;
+					TheInvoice.save();
 				}
+
 			} catch (e) {
-				debugger;
+						debugger;
 				console.log(e);
 			}
 
