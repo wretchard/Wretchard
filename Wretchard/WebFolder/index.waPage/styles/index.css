@@ -3,6 +3,27 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText10 {
+	 width: 109px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem2 {
+	 width: 109px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
 #richText7 {
 	 width: 109px;
 	 height: 22px;
@@ -130,7 +151,7 @@
 
 #richText4 {
 	 width: 105px;
-	 height: 22px;
+	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -151,7 +172,7 @@
 
 #menuBar1 {
 	 width: 109px;
-	 height: 22px;
+	 height: 44px;
 	 top: 28px;
 	 left: 0px;
 	
@@ -271,7 +292,7 @@
 
 #component_main {
 	 width: 1200px;
-	 height: 900px;
+	 height: 1200px;
 	 top: 67px;
 	 left: 14px;
 	
@@ -284,11 +305,11 @@
 	 border-left-style: none;
 	 border-right-style: none;
 	 border-bottom-style: none;
+	 background-color: rgba(0, 0, 0, 0);
 	 border-top-width: 0px;
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
-	 background-color: rgba(0, 0, 0, 0);
 	 
 }
 

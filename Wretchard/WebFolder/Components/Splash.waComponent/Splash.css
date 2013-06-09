@@ -4,19 +4,19 @@
 */
 
 #{id}frameBlurb {
-	 width: 800px;
-	 height: 600px;
+	 width: 1200px;
+	 height: 1600px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
 	 border-top-style: none;
-	 border-top-width: 0px;
 	 border-left-style: none;
-	 border-left-width: 0px;
 	 border-right-style: none;
-	 border-right-width: 0px;
 	 border-bottom-style: none;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
 	 border-bottom-width: 0px;
 	 
 }

@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuItem2 = {};	// @menuItem
 	var menuItemFB = {};	// @menuItem
 	var menuItemTwitter = {};	// @menuItem
 	var menuItemNoWay = {};	// @menuItem
@@ -12,6 +13,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuItem2.click = function menuItem2_click (event)// @startlock
+	{// @endlock
+		window.open("http://wretchard.blogspot.com.au/", "_blank");
+	};// @lock
 
 	menuItemFB.click = function menuItemFB_click (event)// @startlock
 	{// @endlock
@@ -54,6 +60,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("menuItem2", "click", menuItem2.click, "WAF");
 	WAF.addListener("menuItemFB", "click", menuItemFB.click, "WAF");
 	WAF.addListener("menuItemTwitter", "click", menuItemTwitter.click, "WAF");
 	WAF.addListener("menuItemNoWay", "click", menuItemNoWay.click, "WAF");
