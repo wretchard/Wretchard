@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuItemAuthor = {};	// @menuItem
 	var menuItemRebranding = {};	// @menuItem
 	var menuItem4 = {};	// @menuItem
 	var menuItem2 = {};	// @menuItem
@@ -15,6 +16,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuItemAuthor.click = function menuItemAuthor_click (event)// @startlock
+	{// @endlock
+		window.open("http://www.amazon.com/Richard-Fernandez/e/B00DJXLUU4", "_blank");
+	};// @lock
 
 	menuItemRebranding.click = function menuItemRebranding_click (event)// @startlock
 	{// @endlock
@@ -72,6 +78,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("menuItemAuthor", "click", menuItemAuthor.click, "WAF");
 	WAF.addListener("menuItemRebranding", "click", menuItemRebranding.click, "WAF");
 	WAF.addListener("menuItem4", "click", menuItem4.click, "WAF");
 	WAF.addListener("menuItem2", "click", menuItem2.click, "WAF");

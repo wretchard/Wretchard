@@ -3,6 +3,16 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText16 {
+	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #richText15 {
 	 width: 101px;
 	 height: 22px;
@@ -77,7 +87,7 @@
 
 #richText9 {
 	 width: 105px;
-	 height: 22px;
+	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -127,7 +137,7 @@
 
 #menuBar3 {
 	 width: 109px;
-	 height: 68px;
+	 height: 90px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -445,6 +455,17 @@
 
 #menuItemRebranding {
 	 width: 101px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
+#menuItemAuthor {
+	 width: 105px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
