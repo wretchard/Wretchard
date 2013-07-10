@@ -3,6 +3,16 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText17 {
+	 width: 101px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #richText16 {
 	 width: 105px;
 	 height: 22px;
@@ -15,7 +25,7 @@
 
 #richText15 {
 	 width: 101px;
-	 height: 22px;
+	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -97,7 +107,7 @@
 
 #richText14 {
 	 width: 101px;
-	 height: 22px;
+	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -107,7 +117,7 @@
 
 #menuBar4 {
 	 width: 105px;
-	 height: 50px;
+	 height: 68px;
 	 top: 0px;
 	 left: 107px;
 	
@@ -236,7 +246,7 @@
 }
 
 #image2 {
-	 width: 56px;
+	 width: 47px;
 	 height: 47px;
 	 top: 10px;
 	 left: 16px;
@@ -466,6 +476,17 @@
 
 #menuItemAuthor {
 	 width: 105px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
+#menuItemWarWords {
+	 width: 101px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;

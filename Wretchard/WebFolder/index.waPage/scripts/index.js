@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuItemWarWords = {};	// @menuItem
 	var menuItemAuthor = {};	// @menuItem
 	var menuItemRebranding = {};	// @menuItem
 	var menuItem4 = {};	// @menuItem
@@ -16,6 +17,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuItemWarWords.click = function menuItemWarWords_click (event)// @startlock
+	{// @endlock
+		windows.open("http://www.amazon.com/exec/obidos/ASIN/B00DTRHXLA/wwwfallbackbe-20")
+	};// @lock
 
 	menuItemAuthor.click = function menuItemAuthor_click (event)// @startlock
 	{// @endlock
@@ -78,6 +84,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("menuItemWarWords", "click", menuItemWarWords.click, "WAF");
 	WAF.addListener("menuItemAuthor", "click", menuItemAuthor.click, "WAF");
 	WAF.addListener("menuItemRebranding", "click", menuItemRebranding.click, "WAF");
 	WAF.addListener("menuItem4", "click", menuItem4.click, "WAF");
