@@ -3,8 +3,8 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#richText17 {
-	 width: 101px;
+#richText18 {
+	 width: 109px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
@@ -16,16 +16,6 @@
 #richText16 {
 	 width: 105px;
 	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText15 {
-	 width: 101px;
-	 height: 20px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -100,26 +90,6 @@
 	 height: 20px;
 	 top: 0px;
 	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText14 {
-	 width: 101px;
-	 height: 20px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuBar4 {
-	 width: 105px;
-	 height: 68px;
-	 top: 0px;
-	 left: 107px;
 	
 	 position: absolute;
 	 
@@ -223,7 +193,7 @@
 
 #menuBar1 {
 	 width: 109px;
-	 height: 44px;
+	 height: 66px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -430,17 +400,6 @@
 	 
 }
 
-#menuItemNoWay {
-	 width: 101px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 font-size: 11px;
-	 
-}
-
 #menuItemTwitter {
 	 width: 105px;
 	 height: 22px;
@@ -463,17 +422,6 @@
 	 
 }
 
-#menuItemRebranding {
-	 width: 101px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 font-size: 11px;
-	 
-}
-
 #menuItemAuthor {
 	 width: 105px;
 	 height: 22px;
@@ -485,8 +433,8 @@
 	 
 }
 
-#menuItemWarWords {
-	 width: 101px;
+#menuItemVoteTracker {
+	 width: 109px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;

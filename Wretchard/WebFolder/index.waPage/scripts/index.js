@@ -2,14 +2,13 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
-	var menuItemWarWords = {};	// @menuItem
+	var menuItemVoteTracker = {};	// @menuItem
+	var menuItemBooks = {};	// @menuItem
 	var menuItemAuthor = {};	// @menuItem
-	var menuItemRebranding = {};	// @menuItem
 	var menuItem4 = {};	// @menuItem
 	var menuItem2 = {};	// @menuItem
 	var menuItemFB = {};	// @menuItem
 	var menuItemTwitter = {};	// @menuItem
-	var menuItemNoWay = {};	// @menuItem
 	var menuItemBelmont = {};	// @menuItem
 	var menuItem1 = {};	// @menuItem
 	var menuItem3 = {};	// @menuItem
@@ -18,19 +17,19 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
-	menuItemWarWords.click = function menuItemWarWords_click (event)// @startlock
+	menuItemVoteTracker.click = function menuItemVoteTracker_click (event)// @startlock
 	{// @endlock
-		windows.open("http://www.amazon.com/exec/obidos/ASIN/B00DTRHXLA/wwwfallbackbe-20")
+		window.open("http://ec2-23-22-2-174.compute-1.amazonaws.com", "_blank");
+	};// @lock
+
+	menuItemBooks.click = function menuItemBooks_click (event)// @startlock
+	{// @endlock
+		window.open("https://www.amazon.com/author/fernandezrichard", "_blank");
 	};// @lock
 
 	menuItemAuthor.click = function menuItemAuthor_click (event)// @startlock
 	{// @endlock
 		window.open("http://www.amazon.com/Richard-Fernandez/e/B00DJXLUU4", "_blank");
-	};// @lock
-
-	menuItemRebranding.click = function menuItemRebranding_click (event)// @startlock
-	{// @endlock
-		window.open("http://www.amazon.com/exec/obidos/ASIN/B00DJUAPDK/wwwfallbackbe-20", "_blank");
 	};// @lock
 
 	menuItem4.click = function menuItem4_click (event)// @startlock
@@ -52,11 +51,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	menuItemTwitter.click = function menuItemTwitter_click (event)// @startlock
 	{// @endlock
 		window.open('https://twitter.com/wretchardthecat', '_blank');
-	};// @lock
-
-	menuItemNoWay.click = function menuItemNoWay_click (event)// @startlock
-	{// @endlock
-		window.open("http://www.amazon.com/exec/obidos/ASIN/1453892818/wwwfallbackbe-20", "_blank");
 	};// @lock
 
 	menuItemBelmont.click = function menuItemBelmont_click (event)// @startlock
@@ -84,14 +78,13 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
-	WAF.addListener("menuItemWarWords", "click", menuItemWarWords.click, "WAF");
+	WAF.addListener("menuItemVoteTracker", "click", menuItemVoteTracker.click, "WAF");
+	WAF.addListener("menuItemBooks", "click", menuItemBooks.click, "WAF");
 	WAF.addListener("menuItemAuthor", "click", menuItemAuthor.click, "WAF");
-	WAF.addListener("menuItemRebranding", "click", menuItemRebranding.click, "WAF");
 	WAF.addListener("menuItem4", "click", menuItem4.click, "WAF");
 	WAF.addListener("menuItem2", "click", menuItem2.click, "WAF");
 	WAF.addListener("menuItemFB", "click", menuItemFB.click, "WAF");
 	WAF.addListener("menuItemTwitter", "click", menuItemTwitter.click, "WAF");
-	WAF.addListener("menuItemNoWay", "click", menuItemNoWay.click, "WAF");
 	WAF.addListener("menuItemBelmont", "click", menuItemBelmont.click, "WAF");
 	WAF.addListener("menuItem1", "click", menuItem1.click, "WAF");
 	WAF.addListener("menuItem3", "click", menuItem3.click, "WAF");
