@@ -4,7 +4,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @region namespaceDeclaration// @startlock
 	var menuItemVoteTracker = {};	// @menuItem
 	var menuItemBooks = {};	// @menuItem
-	var menuItemAuthor = {};	// @menuItem
 	var menuItem4 = {};	// @menuItem
 	var menuItem2 = {};	// @menuItem
 	var menuItemFB = {};	// @menuItem
@@ -25,11 +24,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	menuItemBooks.click = function menuItemBooks_click (event)// @startlock
 	{// @endlock
 		window.open("https://www.amazon.com/author/fernandezrichard", "_blank");
-	};// @lock
-
-	menuItemAuthor.click = function menuItemAuthor_click (event)// @startlock
-	{// @endlock
-		window.open("http://www.amazon.com/Richard-Fernandez/e/B00DJXLUU4", "_blank");
 	};// @lock
 
 	menuItem4.click = function menuItem4_click (event)// @startlock
@@ -80,7 +74,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @region eventManager// @startlock
 	WAF.addListener("menuItemVoteTracker", "click", menuItemVoteTracker.click, "WAF");
 	WAF.addListener("menuItemBooks", "click", menuItemBooks.click, "WAF");
-	WAF.addListener("menuItemAuthor", "click", menuItemAuthor.click, "WAF");
 	WAF.addListener("menuItem4", "click", menuItem4.click, "WAF");
 	WAF.addListener("menuItem2", "click", menuItem2.click, "WAF");
 	WAF.addListener("menuItemFB", "click", menuItemFB.click, "WAF");
