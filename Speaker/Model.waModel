@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog>
+
+<extraProperties ____objectunic="true" version="1">
+
+	<classes ____objectunic="true">
+
+		<Agency ____objectunic="true" panelColor="#548DD4">
+
+			<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+				<position ____objectunic="true" X="390" Y="15"/>
+
+			</panel>
+
+		</Agency>
+
+		<Fee ____objectunic="true" panelColor="#BFBFBF">
+
+			<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+				<position ____objectunic="true" X="40" Y="366"/>
+
+			</panel>
+
+		</Fee>
+
+		<Speaker ____objectunic="true" panelColor="#8DB3E2">
+
+			<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+				<position ____objectunic="true" X="21" Y="14"/>
+
+			</panel>
+
+		</Speaker>
+
+		<Invoice ____objectunic="true" panelColor="#E5B9B7">
+
+			<panel ____objectunic="true" isOpen="false" pathVisible="true">
+
+				<position ____objectunic="true" X="358" Y="401"/>
+
+			</panel>
+
+		</Invoice>
+
+		<Where ____objectunic="true" panelColor="#E5B9B7">
+
+			<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+				<position ____objectunic="true" X="406" Y="283"/>
+
+			</panel>
+
+		</Where>
+
+	</classes>
+
+	<model ____objectunic="true" workspaceLeft="0" workspaceTop="0"/>
+
+</extraProperties>
+
+<dataClasses name="Agency" className="Agency" collectionName="Agencies" scope="public">
+
+	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+
+	<attributes name="agencyName" kind="storage" scope="public" type="string"/>
+
+	<attributes name="logo" kind="storage" scope="public" type="image"/>
+
+	<attributes name="speakers" kind="relatedEntities" scope="public" type="Speakers" reversePath="true" path="agency"/>
+
+	<attributes name="agencyEmail" kind="storage" scope="public" type="string"/>
+
+</dataClasses>
+
+<dataClasses name="Fee" className="Fee" collectionName="Fees" scope="public">
+
+	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+
+	<attributes name="fee" kind="storage" scope="public" type="string"/>
+
+	<attributes name="activity" kind="storage" scope="public" type="string"/>
+
+	<attributes name="hours" kind="storage" scope="public" type="number"/>
+
+	<attributes name="fixedExpenses" kind="storage" scope="public" type="number"/>
+
+</dataClasses>
+
+<dataClasses name="Invoice" className="Invoice" collectionName="InvoiceCollection" scope="public">
+
+	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+
+</dataClasses>
+
+<dataClasses name="Speaker" className="Speaker" collectionName="Speakers" scope="public">
+
+	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+
+	<attributes name="firstName" kind="storage" scope="public" type="string"/>
+
+	<attributes name="lastName" kind="storage" scope="public" type="string"/>
+
+	<attributes name="eMail" kind="storage" scope="public" type="string"/>
+
+	<attributes name="fullName" kind="calculated" scope="public" type="string" scriptKind="javascript">
+
+		<onGet from="guidedModel.Speaker.fullName.onGet"/>
+
+	</attributes>
+
+	<attributes name="skillSet" kind="storage" scope="public" type="string"/>
+
+	<attributes name="category" scope="public" type="string" kind="storage"/>
+
+	<attributes name="agency" kind="relatedEntity" scope="public" type="Agency" path="Agency"/>
+
+	<attributes name="whereCollection" kind="relatedEntities" scope="public" type="WhereCollection" reversePath="true" path="speaker"/>
+
+</dataClasses>
+
+<dataClasses name="Where" className="Where" collectionName="WhereCollection" scope="public">
+
+	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+
+	<attributes name="address" kind="storage" scope="public" type="string"/>
+
+	<attributes name="fromWhen" kind="storage" scope="public" type="date" simpleDate="false"/>
+
+	<attributes name="toWhen" kind="storage" scope="public" type="date" simpleDate="false"/>
+
+	<attributes name="speaker" kind="relatedEntity" scope="public" type="Speaker" path="Speaker"/>
+
+	<attributes name="agencyName" kind="alias" scope="public" type="string" path="speaker.agency.agencyName"/>
+
+	<attributes name="fullName" kind="alias" scope="public" type="string" path="speaker.fullName"/>
+
+	<attributes name="agencyEmail" scope="public" path="speaker.agency.agencyEmail" type="string" kind="alias"/>
+
+</dataClasses>
+</EntityModelCatalog>

@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var menuFourD = {};	// @menuItem
 	var menuItemVoteTracker = {};	// @menuItem
 	var menuItemBooks = {};	// @menuItem
 	var menuItem4 = {};	// @menuItem
@@ -9,12 +10,16 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	var menuItemFB = {};	// @menuItem
 	var menuItemTwitter = {};	// @menuItem
 	var menuItemBelmont = {};	// @menuItem
-	var menuItem1 = {};	// @menuItem
 	var menuItem3 = {};	// @menuItem
 	var menuItemTipjar = {};	// @menuItem
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	menuFourD.click = function menuFourD_click (event)// @startlock
+	{// @endlock
+		window.open("http://www.4d.com/au/products/wakanda.html", "_blank");
+	};// @lock
 
 	menuItemVoteTracker.click = function menuItemVoteTracker_click (event)// @startlock
 	{// @endlock
@@ -52,12 +57,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		window.open("http://pjmedia.com/richardfernandez/", "_blank");
 	};// @lock
 
-	menuItem1.click = function menuItem1_click (event)// @startlock
-	{// @endlock
-		$$('component_main').removeComponent();
-		$$('component_main').loadComponent('/Components/Ideas/Catering.waComponent');
-	};// @lock
-
 	menuItem3.click = function menuItem3_click (event)// @startlock
 	{// @endlock
 		$$('component_main').removeComponent();
@@ -72,6 +71,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("menuFourD", "click", menuFourD.click, "WAF");
 	WAF.addListener("menuItemVoteTracker", "click", menuItemVoteTracker.click, "WAF");
 	WAF.addListener("menuItemBooks", "click", menuItemBooks.click, "WAF");
 	WAF.addListener("menuItem4", "click", menuItem4.click, "WAF");
@@ -79,7 +79,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	WAF.addListener("menuItemFB", "click", menuItemFB.click, "WAF");
 	WAF.addListener("menuItemTwitter", "click", menuItemTwitter.click, "WAF");
 	WAF.addListener("menuItemBelmont", "click", menuItemBelmont.click, "WAF");
-	WAF.addListener("menuItem1", "click", menuItem1.click, "WAF");
 	WAF.addListener("menuItem3", "click", menuItem3.click, "WAF");
 	WAF.addListener("menuItemTipjar", "click", menuItemTipjar.click, "WAF");
 // @endregion

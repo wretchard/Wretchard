@@ -3,6 +3,26 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#menuBarWretchard .waf-menuItem .waf-menuItem {
+	 font-size: 10px;
+	 
+}
+
+#menuBarWretchard .waf-menuItem-level-0 {
+	 font-size: 12px;
+	 
+}
+
+#richText14 {
+	 width: 109px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #richText18 {
 	 width: 109px;
 	 height: 22px;
@@ -160,27 +180,6 @@
 	 
 }
 
-#richText4 {
-	 width: 105px;
-	 height: 20px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem1 {
-	 width: 105px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 font-size: 11px;
-	 
-}
-
 #menuBar1 {
 	 width: 109px;
 	 height: 66px;
@@ -275,18 +274,18 @@
 	 width: 200px;
 	 height: 26px;
 	 top: 10px;
-	 left: 75px;
+	 left: 68px;
 	
 	 position: absolute;
 	 text-align: center;
 	 font-family: 'Droid Sans', sans-serif;
 	 line-height: 26px;
-	 color: rgb(114, 114, 114);
 	 font-size: 28px;
 	 border-top-width: 0px;
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
+	 color: rgb(0, 0, 0);
 	 
 }
 
@@ -305,7 +304,7 @@
 	 width: 1200px;
 	 height: 1200px;
 	 top: 67px;
-	 left: 14px;
+	 left: 0px;
 	
 	 position: absolute;
 	 border-top-color: rgb(153, 153, 153);
@@ -413,6 +412,17 @@
 }
 
 #menuItemVoteTracker {
+	 width: 109px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-size: 11px;
+	 
+}
+
+#menuFourD {
 	 width: 109px;
 	 height: 22px;
 	 top: 0px;
