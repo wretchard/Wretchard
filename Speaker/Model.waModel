@@ -9,55 +9,43 @@
 			<panel ____objectunic="true" isOpen="true" pathVisible="true">
 
 				<position ____objectunic="true" X="390" Y="15"/>
-
-			</panel>
-
-		</Agency>
+</panel>
+</Agency>
 
 		<Fee ____objectunic="true" panelColor="#BFBFBF">
 
 			<panel ____objectunic="true" isOpen="true" pathVisible="true">
 
-				<position ____objectunic="true" X="40" Y="366"/>
-
-			</panel>
-
-		</Fee>
+				<position ____objectunic="true" X="26" Y="396"/>
+</panel>
+</Fee>
 
 		<Speaker ____objectunic="true" panelColor="#8DB3E2">
 
 			<panel ____objectunic="true" isOpen="true" pathVisible="true">
 
-				<position ____objectunic="true" X="21" Y="14"/>
-
-			</panel>
-
-		</Speaker>
+				<position ____objectunic="true" X="25" Y="6"/>
+</panel>
+</Speaker>
 
 		<Invoice ____objectunic="true" panelColor="#E5B9B7">
 
 			<panel ____objectunic="true" isOpen="false" pathVisible="true">
 
 				<position ____objectunic="true" X="358" Y="401"/>
-
-			</panel>
-
-		</Invoice>
+</panel>
+</Invoice>
 
 		<Where ____objectunic="true" panelColor="#E5B9B7">
 
 			<panel ____objectunic="true" isOpen="true" pathVisible="true">
 
-				<position ____objectunic="true" X="406" Y="283"/>
-
-			</panel>
-
-		</Where>
-
-	</classes>
+				<position ____objectunic="true" X="388" Y="248"/>
+</panel>
+</Where>
+</classes>
 
 	<model ____objectunic="true" workspaceLeft="0" workspaceTop="0"/>
-
 </extraProperties>
 
 <dataClasses name="Agency" className="Agency" collectionName="Agencies" scope="public">
@@ -90,11 +78,13 @@
 
 <dataClasses name="Invoice" className="Invoice" collectionName="InvoiceCollection" scope="public">
 
-	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+
+	<key name="ID"/>
 
 </dataClasses>
 
-<dataClasses name="Speaker" className="Speaker" collectionName="Speakers" scope="public">
+<dataClasses name="Speaker" className="Speaker" collectionName="Speakers" scope="public" publishAsJSGlobal="false">
 
 	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
 
@@ -110,13 +100,19 @@
 
 	</attributes>
 
-	<attributes name="skillSet" kind="storage" scope="public" type="string"/>
+	<attributes name="url" kind="storage" scope="public" type="string"/>
 
-	<attributes name="category" scope="public" type="string" kind="storage"/>
+	<attributes name="category" kind="storage" scope="public" type="string"/>
 
 	<attributes name="agency" kind="relatedEntity" scope="public" type="Agency" path="Agency"/>
 
 	<attributes name="whereCollection" kind="relatedEntities" scope="public" type="WhereCollection" reversePath="true" path="speaker"/>
+
+	<attributes name="applyTo" kind="storage" scope="public" type="string"/>
+
+	<attributes name="agencyName" kind="alias" scope="public" type="string" path="agency.agencyName"/>
+
+	<attributes name="sessionFee" kind="storage" scope="public" type="string"/>
 
 </dataClasses>
 
@@ -124,7 +120,11 @@
 
 	<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
 
-	<attributes name="address" kind="storage" scope="public" type="string"/>
+	<attributes name="address" kind="calculated" scope="public" type="string" scriptKind="javascript">
+
+		<onGet from="guidedModel.Where.address.onGet"/>
+
+	</attributes>
 
 	<attributes name="fromWhen" kind="storage" scope="public" type="date" simpleDate="false"/>
 
@@ -136,7 +136,17 @@
 
 	<attributes name="fullName" kind="alias" scope="public" type="string" path="speaker.fullName"/>
 
-	<attributes name="agencyEmail" scope="public" path="speaker.agency.agencyEmail" type="string" kind="alias"/>
+	<attributes name="agencyEmail" kind="alias" scope="public" type="string" path="speaker.agency.agencyEmail"/>
+
+	<attributes name="street" kind="storage" scope="public" type="string"/>
+
+	<attributes name="city" kind="storage" scope="public" not_null="false" type="string"/>
+
+	<attributes name="country" kind="storage" scope="public" type="string"/>
+
+	<attributes name="sessionfee" kind="alias" scope="public" type="string" path="speaker.sessionFee"/>
+
+	<methods name="getCities" applyTo="dataClass" scope="public" from="guidedModel.Where.methods.getCities"/>
 
 </dataClasses>
 </EntityModelCatalog>

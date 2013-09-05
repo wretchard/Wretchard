@@ -13,38 +13,37 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var comboAddClient = {};	// @combobox
-	var textClientSearch = {};	// @textField
+	var dataGrid1 = {};	// @dataGrid
+	var agencyEvent = {};	// @dataSource
+	var dataGridApplicants = {};	// @dataGrid
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	comboAddClient.change = function comboAddClient_change (event)// @startlock
+	dataGrid1.onRowDblClick = function dataGrid1_onRowDblClick (event)// @startlock
 	{// @endlock
-		alert(this.getValue());
+		alert("will drill down")
 	};// @lock
 
-	textClientSearch.keydown = function textClientSearch_keydown (event)// @startlock
+	agencyEvent.onCurrentElementChange = function agencyEvent_onCurrentElementChange (event)// @startlock
 	{// @endlock
-		if(event.keyCode == 13)
-		{
-		varClient=this.getValue();
-		findClient (varClient)
-		}
+		source.componentSpeakerMain_speaker.query("applyTo=:1", source.componentSpeakerMain_agency.ID)
 	};// @lock
 
-	textClientSearch.blur = function textClientSearch_blur (event)// @startlock
+	dataGridApplicants.onRowDblClick = function dataGridApplicants_onRowDblClick (event)// @startlock
 	{// @endlock
-
-		varClient=this.getValue();
-		findClient (varClient)
-
+		sources.componentSpeakerMain_speaker.agency.set(sources.componentSpeakerMain_agency);
+		sources.componentSpeakerMain_speaker.applyTo=null
+		sources.componentSpeakerMain_speaker.save();
+		sources.componentSpeakerMain_agency.collectionRefresh()
+		
+		
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_comboAddClient", "change", comboAddClient.change, "WAF");
-	WAF.addListener(this.id + "_textClientSearch", "keydown", textClientSearch.keydown, "WAF");
-	WAF.addListener(this.id + "_textClientSearch", "blur", textClientSearch.blur, "WAF");
+	WAF.addListener(this.id + "_dataGrid1", "onRowDblClick", dataGrid1.onRowDblClick, "WAF");
+	WAF.addListener(this.id + "_agency", "onCurrentElementChange", agencyEvent.onCurrentElementChange, "WAF");
+	WAF.addListener(this.id + "_dataGridApplicants", "onRowDblClick", dataGridApplicants.onRowDblClick, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
@@ -54,12 +53,8 @@ function constructor (id) {
 return constructor;
 })();// @endlock
 
-function findClient(varClient) {
-	TheClients = ds.Speaker.query("lastName=:1", varClient, {
-		onSuccess: function(event) {
-		debugger;
-		a=event
-		//source.componentSpeakerMain_arrNewSpeakers=event.toArray("fullName, eMail, ID")
-		}
-		})
+function addNewClient(speakerID) {
+	alert('code here');
 }
+
+

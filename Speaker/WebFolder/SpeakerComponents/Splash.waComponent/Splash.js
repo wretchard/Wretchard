@@ -7,28 +7,17 @@ function constructor (id) {
 
 	// @region beginComponentDeclaration// @startlock
 	var $comp = this;
-	this.name = 'Map';
+	this.name = 'Splash';
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		
-
 
 	// @region namespaceDeclaration// @startlock
-	var dataGrid1 = {};	// @dataGrid
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
-	{// @endlock
-		//debugger;
-		varPlace=sources.arrTowns.city;
-		centerMap(varPlace)
-	};// @lock
-
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
@@ -37,10 +26,3 @@ function constructor (id) {
 }// @startlock
 return constructor;
 })();// @endlock
-
-function centerMap(varPlace) {
-		
-		map=$$('componentSpeakerMain_googleMaps1')
-		source.componentSpeakerMain_where.query("city=:1", varPlace)
-		//map.setCenter(varPlace)
-}

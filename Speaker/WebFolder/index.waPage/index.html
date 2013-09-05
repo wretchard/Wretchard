@@ -9,12 +9,14 @@
 		<meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
 		<meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
 
-		<meta name="WAF.catalog" content=""/>
+		<meta name="WAF.catalog" content="Where"/>
 		<meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
-</head>
+
+		<meta data-type="dataSource" data-lib="WAF" data-source="Where" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="where" content="where"/>
+		</head>
 
 <body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
-			<ul id="menuBarSpeaker" data-type="menuBar" data-subMenuShow="hover" data-lib="WAF" data-display="horizontal" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-menuBar " data-level="0">
+			<ul id="menuBarSpeaker" data-type="menuBar" data-subMenuShow="hover" data-lib="WAF" data-level="0" data-display="horizontal" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-menuBar ">
 	 	<li id="menuMap" data-type="menuItem" data-linked-tag="richText1" data-lib="WAF" data-context="['protected','allowDrop','allowRemove']" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-menuItem waf-menuItem-level-0 waf-level-0">
 	 	 	<div id="richText1" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-linked-tag="menuItem1" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText ">Who's in town</div>
  	 	</li>
@@ -24,10 +26,14 @@
  		<li id="menuAgent" data-type="menuItem" data-linked-tag="richText3" data-lib="WAF" data-context="['protected','allowDrop','allowRemove']" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-menuItem waf-menuItem-level-0 waf-level-0">
 	 	 	<div id="richText3" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-linked-tag="menuItem3" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText ">Agency Manager</div>
  	 	</li>
+ 		<li id="menuAbout" data-type="menuItem" data-lib="WAF" data-context="['protected','allowDrop','allowRemove']" class="waf-widget waf-menuItem waf-menuItem-level-0 waf-level-0" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="richText4">
+	 	 	<div id="richText4" data-type="richText" data-lib="WAF" class="waf-widget waf-richText " data-autoWidth="false" data-label="" data-label-position="left" data-target="_blank" data-overflow="Hidden" data-plainText="true" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="menuItem1">About</div>
+ 	 	</li>
  	</ul>
-		<div id="componentSpeakerMain" data-type="component" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-component " data-path="/SpeakerComponents/Map.waComponent"></div>
-				<div id="image1" data-type="image" data-lib="WAF" class="waf-widget waf-image " data-target="_blank" data-label="" data-label-position="left" data-fit="0" data-constraint-left="true" data-constraint-top="true" data-src="/images/banner.png"></div>
-		<div id="image2" data-type="image" data-lib="WAF" class="waf-widget waf-image " data-target="_blank" data-label="" data-label-position="left" data-fit="3" data-constraint-left="true" data-constraint-top="true" data-src="/images/banner.png"></div>
+		<div id="componentSpeakerMain" data-type="component" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-component " data-path="/SpeakerComponents/Splash.waComponent"></div>
+				<div id="image1" data-type="image" data-target="_blank" data-src="/images/banner.png" data-lib="WAF" data-label-position="left" data-label="" data-fit="0" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-image "></div>
+		<div id="image2" data-type="image" data-target="_blank" data-src="/images/banner.png" data-lib="WAF" data-label-position="left" data-label="" data-fit="3" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-image "></div>
+		
 		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
 	</body>
 </html>

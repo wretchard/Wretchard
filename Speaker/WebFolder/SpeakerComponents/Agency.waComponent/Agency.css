@@ -4,30 +4,36 @@
 */
 
 #{id}label4 {
-	 width: 88px;
+	 width: 300px;
 	 height: 15px;
-	 top: 93.5px;
-	 left: 446px;
+	 top: 95px;
+	 left: 0px;
 	
 	 position: absolute;
+	 font-weight: bold;
+	 min-width: 300px;
+	 max-width: 300px;
 	 
 }
 
 #{id}label3 {
-	 width: 53px;
+	 width: 100px;
 	 height: 15px;
-	 top: 95px;
-	 left: 13px;
+	 top: 264px;
+	 left: -1px;
 	
 	 position: absolute;
+	 font-weight: bold;
+	 min-width: 100px;
+	 max-width: 100px;
 	 
 }
 
 #{id}dataGrid1 {
 	 width: 692px;
 	 height: 300px;
-	 top: 120px;
-	 left: 2px;
+	 top: 284px;
+	 left: -1px;
 	
 	 position: absolute;
 	 
@@ -142,21 +148,11 @@
 	 
 }
 
-#{id}comboAddClient {
-	 width: 345px;
-	 height: 23px;
-	 top: 91px;
-	 left: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textClientSearch {
-	 width: 152px;
-	 height: 22px;
-	 top: 90px;
-	 left: 539px;
+#{id}dataGridApplicants {
+	 width: 689px;
+	 height: 139px;
+	 top: 115px;
+	 left: 0px;
 	
 	 position: absolute;
 	 

@@ -3,6 +3,38 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}textField2 {
+	 width: 117px;
+	 height: 22px;
+	 top: 78px;
+	 left: 532px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label4 {
+	 width: 30px;
+	 height: 15px;
+	 top: 81.5px;
+	 left: 497px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 min-width: 30px;
+	 
+}
+
+#{id}label3 {
+	 width: 31px;
+	 height: 15px;
+	 top: 22.5px;
+	 left: 497px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label2 {
 	 width: 82px;
 	 height: 15px;
@@ -105,8 +137,8 @@
 #{id}label14 {
 	 width: 75px;
 	 height: 15px;
-	 top: 101px;
-	 left: 18px;
+	 top: 83.5px;
+	 left: 17px;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -186,20 +218,10 @@
 }
 
 #{id}textEmail {
-	 width: 349px;
+	 width: 131px;
 	 height: 22px;
 	 top: 51px;
 	 left: 319px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textSkill {
-	 width: 570px;
-	 height: 57px;
-	 top: 80px;
-	 left: 98px;
 	
 	 position: absolute;
 	 
@@ -210,6 +232,38 @@
 	 height: 22px;
 	 top: 490px;
 	 left: 91px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}comboAgent {
+	 width: 125px;
+	 height: 24px;
+	 top: 18px;
+	 left: 533px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richTextAgent {
+	 width: 134px;
+	 height: 21px;
+	 top: 53px;
+	 left: 533px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: left;
+	 
+}
+
+#{id}textURL {
+	 width: 350px;
+	 height: 22px;
+	 top: 80px;
+	 left: 97px;
 	
 	 position: absolute;
 	 
